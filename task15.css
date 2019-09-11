@@ -1,0 +1,92 @@
+body{
+	margin:none;
+	padding:5px;
+	border: 1px solid #dd1021;
+	background-color: #ffc300;
+}
+
+#topNav{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-decoration: none;
+	grid-gap: 3px;
+	margin-bottom:1em ;
+}
+#topNav a:hover{
+	background-color: #dd1021;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+	background-color: grey;
+	display:inline-block;
+	text-align: center;
+	padding:10px;
+}
+/*The code bellow is in order to style my home page. I've given all elements an ID so that I can target them specificaly.
+This enables me to have all my css for the entire Website in one file*/
+
+
+#mainHome{
+	display:grid;
+	grid-template-columns: 30% 70%;
+}
+
+#picHome{
+	padding: 1%;
+	width: 98%;
+}
+
+/****************************************Menu Styling****************************************/
+#starters, #mains, #desserts{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+}
+
+#DD1, #DD2, #DD3, #DD4, #DD5{ /*DD stands for drop down because this button will display the menu when clicked*/
+	width: 100%;
+	padding:10px;
+	color:white;
+	background-color: grey;
+	border:none;
+}  
+
+#DD1:hover, #DD2:hover, #DD3:hover, #DD4:hover, #DD5:hover{
+	background-color: #dd1021;
+}
+
+.dropDownMenu{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1em;
+}
+
+.item img{
+	width:100%;
+	min-height: 300px;
+	max-height: 300px;
+}
+
+/****************************************My Plate Styling****************************************/
+#plateBody{
+	background-image: url("images/plate.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#cart{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	border:solid black 1px;
+}
+#removeButton{
+	width:100%;
+
+}
+
+#list-items-here{
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}

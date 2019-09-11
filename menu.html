@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="task15.css">
+	<script type="text/javascript" src="task15.js" async></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		/*collapse and expand menu*///had to add this function to the HTML page because it wouldn't work in the javascript file. Please advise.
+		$("button.accordian").click(function(){
+		$(this).next().slideToggle("slow");
+			})
+		})
+	</script>
+</head>
+<body onload="loadCart()">
+	<header><h1>Menu</h1></header>
+	<div id="topNav">
+		<a href="home.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a onclick="saveCart()" href="myPlate.html">My Plate</a>
+	</div>
+		<!------------------------STARTERS------------------------>
+	<div id="menu">
+		<button  class="accordian" class="accordian" id="DD1">Starters</button>
+		<div class="dropDownMenu">
+			<div class="item">
+				<h2>Chicken Wings-(R35.00)</h2>
+				<img src="images/chickenWings.jpg">
+				<button onclick="addToCart(0)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Crumbed Mushrooms-(R35.00)</h2>
+				<img src="images/mushrooms.jpg" id="mushrooms">
+				<button onclick="addToCart(1)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Mini Tacos-(R65.00)</h2>
+				<img src="images/tacos.jpg">
+				<button onclick="addToCart(2)" class="add-to-cart">Add to Plate</button>
+			</div>	
+		</div>
+		<!------------------------MAIN MEALS------------------------>
+		<button class="accordian" id="DD2">Mains</button>
+		<div class="dropDownMenu">
+			<div class="item">
+				<h2>Cheese Burger-(R105.00)</h2>
+				<img src="images/burger.jpg">
+				<button onclick="addToCart(3)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Pizza-(R95.00)</h2>
+				<img src="images/pizza.jpg">
+				<button onclick="addToCart(4)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Burrito-(R75.00)</h2>
+				<img src="images/burrito.jpg">
+				<button onclick="addToCart(5)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Chicken Kebabs-(60.00)</h2>
+				<img src="images/kebab.jpg">
+				<button onclick="addToCart(6)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>T-Bone Steak-(R115.00)</h2>
+				<img src="images/steak.jpg">
+				<button onclick="addToCart(7)" class="add-to-cart">Add to Plate</button>
+			</div>
+		</div>
+		<!------------------------Sides------------------------>
+		<button class="accordian" id="DD3">Sides</button>
+		<div class="dropDownMenu">
+			<div class="item">
+				<h2>Cheese Fries-(R35.00)</h2>
+				<img src="images/fries.jpg">
+				<button onclick="addToCart(8)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>French Fries-(R25.00)</h2>
+				<img src="images/frenchFries.jpg">
+				<button onclick="addToCart(9)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Onion Rings-(R35.00)</h2>
+				<img src="images/onionRings.jpg">
+				<button onclick="addToCart(10)" class="add-to-cart">Add to Plate</button>
+			</div>
+		</div>
+		<!------------------------DESSERTS------------------------>		
+		<button class="accordian" id="DD4">Desserts</button>
+		<div class="dropDownMenu">
+			<div class="item">
+				<h2>Ice Cream-(R40.00)</h2>
+				<img src="images/iceCream.jpg">
+				<button onclick="addToCart(11)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Milk Shake-(R40.00)</h2>
+				<img src="images/milkShake.jpg">
+				<button onclick="addToCart(12)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Doughnut-(R20.00)</h2>
+				<img src="images/doughnut.jpg">
+				<button onclick="addToCart(13)" class="add-to-cart">Add to Plate</button>
+			</div>
+			<div class="item">
+				<h2>Choc Chip Cookies-(R15.00)</h2>
+				<img src="images/cookies.jpg">
+				<button onclick="addToCart(14)" class="add-to-cart">Add to Plate</button>
+			</div>
+		</div>	
+	</div>
+		<!------------------------DRINKS------------------------>
+		<button class="accordian" id="DD5">Drinks</button>
+			<div class="dropDownMenu">
+				<ul>
+					<li>Coke-(R22.00)</li><button onclick="addToCart(15)" class="add-to-cart">Add to Plate</button>
+					<li>Fanta-(R22.00)</li><button onclick="addToCart(16)" class="add-to-cart">Add to Plate</button>
+					<li>Sprite-(R22.00)</li><button onclick="addToCart(17)" class="add-to-cart">Add to Plate</button>
+					<li>Orange Juice-(R26.00)</li><button onclick="addToCart(18)" class="add-to-cart">Add to Plate</button>
+					<li>Mango Lasse-(R30.00)</li><button onclick="addToCart(19)" class="add-to-cart">Add to Plate</button>
+
+				</ul>
+			</div>	
+
+	<footer>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</footer>
+
+</body>
+</html>
