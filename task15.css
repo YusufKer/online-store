@@ -1,8 +1,12 @@
 body{
 	margin:none;
 	padding:5px;
-	border: 1px solid #dd1021;
-	background-color: #ffc300;
+	border: 1px solid #dd1021; 
+	background-image:linear-gradient(to right, #add100, #ffc300);
+}
+#plateBody{
+	background-color: #910707;
+	border: 1px solid #ffc300;
 }
 
 #topNav{
@@ -90,3 +94,14 @@ This enables me to have all my css for the entire Website in one file*/
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 }
+
+button{
+	background-color: #7b920a;
+	color:#2b2828;
+	border:none;
+	font-size: 1em;
+	padding:4px;
+	margin:4px 0;
+	border-radius: 2px;
+}
+
