@@ -1,9 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*88888888888888888888888888888888888888888888888888888888888888888888----Menu----88888888888888888888888888888888888888888888888888888888888888888888*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-cart = JSON.parse(localStorage.getItem("myCart"));
+var cart = JSON.parse(localStorage.getItem("myCart")||[]);
 //I've created an array called Cart which will be an array of all the items that the user would like to purchase
-var cart = [];
+
 //total will be used to calculate and display the total cost 
 var total = 0;
 // I've created an object called an item which will populate my cart.
