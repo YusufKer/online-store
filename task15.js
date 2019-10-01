@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*88888888888888888888888888888888888888888888888888888888888888888888----Menu----88888888888888888888888888888888888888888888888888888888888888888888*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-var cart = JSON.parse(localStorage.getItem("myCart")||[]);
+var cart = JSON.parse(localStorage.getItem("myCart"))||[];
 //I've created an array called Cart which will be an array of all the items that the user would like to purchase
 
 //total will be used to calculate and display the total cost 
