@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var cart = JSON.parse(localStorage.getItem("myCart"))||[];
 //I've created an array called Cart which will be an array of all the items that the user would like to purchase
-
+//if there is no cart in local storage. cart will be set to an empty array
 //total will be used to calculate and display the total cost 
 var total = 0;
 // I've created an object called an item which will populate my cart.
