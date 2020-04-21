@@ -98,10 +98,8 @@ function saveCart(){
 }
 //Load Cart
 function loadCart(){
-	if(localStorage.getItem("myCart")){
-		cart = JSON.parse(localStorage.getItem("myCart"))
-	}else{cart = []}
-		
+	if (localStorage.getItem("myCart")) return cart = JSON.parse(localStorage.getItem("myCart"))
+	else return
 	saveCart()
 }
 
